@@ -14,13 +14,21 @@ $query-> execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 if($query->rowCount() > 0)
 {
+  foreach($results as $result){
+    if($result->flag==0){
       $_SESSION['alogin']=$_POST['user'];
       $_SESSION['name']=$result->name;
+      $_SESSION['score']=$result->score;
+      echo "<script type='text/javascript'> document.location = 'changepass.php'; </script>";
+    }else{
+      $_SESSION['alogin']=$_POST['user'];
+      $_SESSION['name']=$result->name;
+      $_SESSION['score']=$result->score;
       echo "<script type='text/javascript'> document.location = 'questions.php'; </script>";
     }
-  
+  }
 
- else{
+} else{
   
   echo "<script>alert('Invalid Details'); document.location = 'login.php'; </script>";
 
