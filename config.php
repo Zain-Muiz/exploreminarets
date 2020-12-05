@@ -1,15 +1,15 @@
 <?php
-// define('DB_HOST','istetkmce.in');
-// define('DB_USER','ezitmxze_admin');
-// define('DB_PASS','Istetkmce@2019');
-// define('DB_NAME','ezitmxze_beat');
+define('DB_HOST','istetkmce.in');
+ define('DB_USER','ezitmxze_admin');
+ define('DB_PASS','Istetkmce@2019');
+ define('DB_NAME','ezitmxze_beat');
 
 
 
-define('DB_HOST','localhost:3308');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','istehunt');
+//define('DB_HOST','localhost:3308');
+//define('DB_USER','root');
+//define('DB_PASS','');
+//define('DB_NAME','istehunt');
 //Establish database connection.
 try
 {
